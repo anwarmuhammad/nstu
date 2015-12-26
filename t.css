@@ -1,0 +1,193 @@
+/*    LAYOUT SECTION     */
+body {
+  background-color: #333333;
+  font-family: cursive,fantasy,sans-serif,serif;
+  font-size: 14px;
+  margin: 0px;
+
+}
+#header{
+  background-color: #5c755e;
+  margin: 10px;
+  height: 90px;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+
+
+}
+#header h1 {
+
+  color: black;
+  text-align: center;
+
+
+}
+#navbar {
+	margin: 100px 0;
+	background-color:black;
+	margin: 10px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+#navbar:after {
+	content:"";
+	display:table;
+	clear:both;
+
+	}
+
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+#navbar ul {
+	padding:0;
+	margin:0px;
+	list-style: none;
+	position: relative;
+	height: 35px;
+	}
+
+/* Positioning the navigation items inline */
+#navbar ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color:black;
+	list-style:none;
+
+
+	}
+
+/* Styling the links */
+#navbar a {
+	display:block;
+	padding:0 10px;
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+	text-align: center;
+
+}
+
+/* Background color change on Hover */
+#navbar a:hover {
+	background-color: #000000;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+#navbar ul ul {
+	display: none;
+	position: absolute;
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px;
+
+}
+
+/* Display Dropdowns on Hover */
+#navbar ul li:hover > ul {
+	display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+#navbar ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+	background-color:purple;
+
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+#navbar ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left:170px;
+	background-color:orange;
+
+
+}
+
+.main {
+  background-color: white;
+  margin-left: 10px;
+
+margin-right: 320px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+  border-radius: 5px;
+   padding: 20px;
+
+}
+/*   HEADING SECTION*/
+h1{
+  color:purple;
+
+}
+.sideright{
+  background-color: #126977;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+  padding:20px;
+  float: right;
+  width:260px;
+clear: right;
+}
+.imgsideright{
+
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+
+  float: right;
+  width:260px;
+clear: right;
+opacity: 1.0;
+transition: opacity 0.5s ease-in-out;
+
+}
+.imgsideright:hover{
+  opacity: 0.4;
+
+}
+li {
+  list-style:square;
+}
+h2  {
+  color:#331199;
+}
+#footer {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 30px;
+  border-radius: 5px;
+  clear: both;
+  padding: 8px;
+  text-align: center;
+
+}
+#container {
+  width:968px;
+  margin:auto;
+
+}
+ 

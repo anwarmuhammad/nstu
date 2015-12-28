@@ -29,6 +29,7 @@ body {
 	margin: 10px;
   height: 60px;
   border-radius: 5px;
+  text-align: center;
 }
 
 /* Since we'll have the "ul li" "float:left"
